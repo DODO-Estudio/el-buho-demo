@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El Búho — Restaurante Vegetariano · San Pedro, Costa Rica</title>
+  <meta name="description" content="Restaurante vegetariano en San Pedro, Costa Rica. Cocina consciente con ingredientes frescos y orgánicos de productores locales. Opciones veganas y gluten-friendly.">
+  <meta name="keywords" content="restaurante vegetariano San Pedro, vegano Costa Rica, El Búho, comida saludable UCR, plant-based Costa Rica">
+  <meta property="og:title" content="El Búho — Restaurante Vegetariano">
+  <meta property="og:description" content="Cocina consciente, fresca y acogedora en San Pedro, Costa Rica.">
+  <meta property="og:type" content="restaurant">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <!-- Logo -->
+      <a href="index.html" class="nav-logo">
+        <svg class="owl-icon" viewBox="0 0 80 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 24 L1 4 Q1 1 4 1 L34 1 L34 24Z" fill="currentColor"/>
+          <path d="M79 24 L79 4 Q79 1 76 1 L46 1 L46 24Z" fill="currentColor"/>
+          <circle cx="18" cy="40" r="16" fill="currentColor"/>
+          <ellipse cx="18" cy="26" rx="2.2" ry="5.5" fill="white" transform="rotate(0,18,40)"/>
+          <ellipse cx="18" cy="26" rx="2.2" ry="5.5" fill="white" transform="rotate(45,18,40)"/>
+          <ellipse cx="18" cy="26" rx="2.2" ry="5.5" fill="white" transform="rotate(90,18,40)"/>
+          <ellipse cx="18" cy="26" rx="2.2" ry="5.5" fill="white" transform="rotate(135,18,40)"/>
+          <ellipse cx="18" cy="26" rx="2.2" ry="5.5" fill="white" transform="rotate(180,18,40)"/>
+          <ellipse cx="18" cy="26" rx="2.2" ry="5.5" fill="white" transform="rotate(225,18,40)"/>
+          <ellipse cx="18" cy="26" rx="2.2" ry="5.5" fill="white" transform="rotate(270,18,40)"/>
+          <ellipse cx="18" cy="26" rx="2.2" ry="5.5" fill="white" transform="rotate(315,18,40)"/>
+          <circle cx="18" cy="40" r="9.5" fill="white"/>
+          <circle cx="18" cy="40" r="6" fill="currentColor"/>
+          <circle cx="18" cy="40" r="2.8" fill="white"/>
+          <circle cx="62" cy="40" r="16" fill="currentColor"/>
+          <ellipse cx="62" cy="26" rx="2.2" ry="5.5" fill="white" transform="rotate(0,62,40)"/>
+          <ellipse cx="62" cy="26" rx="2.2" ry="5.5" fill="white" transform="rotate(45,62,40)"/>
+          <ellipse cx="62" cy="26" rx="2.2" ry="5.5" fill="white" transform="rotate(90,62,40)"/>
+          <ellipse cx="62" cy="26" rx="2.2" ry="5.5" fill="white" transform="rotate(135,62,40)"/>
+          <ellipse cx="62" cy="26" rx="2.2" ry="5.5" fill="white" transform="rotate(180,62,40)"/>
+          <ellipse cx="62" cy="26" rx="2.2" ry="5.5" fill="white" transform="rotate(225,62,40)"/>
+          <ellipse cx="62" cy="26" rx="2.2" ry="5.5" fill="white" transform="rotate(270,62,40)"/>
+          <ellipse cx="62" cy="26" rx="2.2" ry="5.5" fill="white" transform="rotate(315,62,40)"/>
+          <circle cx="62" cy="40" r="9.5" fill="white"/>
+          <circle cx="62" cy="40" r="6" fill="currentColor"/>
+          <circle cx="62" cy="40" r="2.8" fill="white"/>
+          <rect x="34" y="35" width="12" height="9" rx="1.5" fill="currentColor"/>
+        </svg>
+        <span class="logo-text">el búho</span>
+      </a>
+      <!-- Desktop nav -->
+      <div class="nav-links">
+        <a href="#nosotros" data-es="Nosotros" data-en="About">Nosotros</a>
+        <a href="menu.html"  data-es="Menú"     data-en="Menu">Menú</a>
+        <a href="#contacto"  data-es="Contacto" data-en="Contact">Contacto</a>
+      </div>
+      <!-- Right controls -->
+      <div class="nav-right">
+        <button class="lang-toggle" id="langToggle" aria-label="Cambiar idioma / Switch language">
+          <span class="lang-opt" data-lang="es">ES</span>
+          <span class="lang-divider">/</span>
+          <span class="lang-opt" data-lang="en">EN</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <!-- Mobile dropdown -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#nosotros" data-es="Nosotros" data-en="About">Nosotros</a>
+      <a href="menu.html"  data-es="Menú"     data-en="Menu">Menú</a>
+      <a href="#contacto"  data-es="Contacto" data-en="Contact">Contacto</a>
+    </div>
+  </nav>
+
+  <!-- ==================== HERO ==================== -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg"></div>
+
+    <!-- Decorative botanical SVG shapes -->
+    <div class="hero-deco" aria-hidden="true">
+      <svg viewBox="0 0 300 600" style="right:0;top:0;width:38%;opacity:0.06;" fill="var(--green-mid)">
+        <ellipse cx="250" cy="100" rx="80" ry="130" transform="rotate(-20 250 100)"/>
+        <ellipse cx="220" cy="280" rx="60" ry="100" transform="rotate(15 220 280)"/>
+        <ellipse cx="260" cy="440" rx="70" ry="110" transform="rotate(-10 260 440)"/>
+      </svg>
+      <svg viewBox="0 0 200 400" style="left:-2%;bottom:0;width:22%;opacity:0.05;" fill="var(--gold)">
+        <ellipse cx="60" cy="200" rx="50" ry="90" transform="rotate(25 60 200)"/>
+        <ellipse cx="90" cy="350" rx="40" ry="70" transform="rotate(-18 90 350)"/>
+      </svg>
+    </div>
+
+    <!-- Large background owl -->
+    <div class="hero-owl-deco" aria-hidden="true">
+      <svg viewBox="0 0 80 58" fill="var(--cream)" xmlns="http://www.w3.org/2000/svg">
+      <path d="M1 24 L1 4 Q1 1 4 1 L34 1 L34 24Z"/>
+      <path d="M79 24 L79 4 Q79 1 76 1 L46 1 L46 24Z"/>
+      <circle cx="18" cy="40" r="16"/>
+      <ellipse cx="18" cy="26" rx="2.2" ry="5.5" fill="var(--green-deep)" transform="rotate(0,18,40)"/>
+      <ellipse cx="18" cy="26" rx="2.2" ry="5.5" fill="var(--green-deep)" transform="rotate(45,18,40)"/>
+      <ellipse cx="18" cy="26" rx="2.2" ry="5.5" fill="var(--green-deep)" transform="rotate(90,18,40)"/>
+      <ellipse cx="18" cy="26" rx="2.2" ry="5.5" fill="var(--green-deep)" transform="rotate(135,18,40)"/>
+      <ellipse cx="18" cy="26" rx="2.2" ry="5.5" fill="var(--green-deep)" transform="rotate(180,18,40)"/>
+      <ellipse cx="18" cy="26" rx="2.2" ry="5.5" fill="var(--green-deep)" transform="rotate(225,18,40)"/>
+      <ellipse cx="18" cy="26" rx="2.2" ry="5.5" fill="var(--green-deep)" transform="rotate(270,18,40)"/>
+      <ellipse cx="18" cy="26" rx="2.2" ry="5.5" fill="var(--green-deep)" transform="rotate(315,18,40)"/>
+      <circle cx="18" cy="40" r="9.5" fill="var(--green-deep)"/>
+      <circle cx="18" cy="40" r="6"/>
+      <circle cx="18" cy="40" r="2.8" fill="var(--green-deep)"/>
+      <circle cx="62" cy="40" r="16"/>
+      <ellipse cx="62" cy="26" rx="2.2" ry="5.5" fill="var(--green-deep)" transform="rotate(0,62,40)"/>
+      <ellipse cx="62" cy="26" rx="2.2" ry="5.5" fill="var(--green-deep)" transform="rotate(45,62,40)"/>
+      <ellipse cx="62" cy="26" rx="2.2" ry="5.5" fill="var(--green-deep)" transform="rotate(90,62,40)"/>
+      <ellipse cx="62" cy="26" rx="2.2" ry="5.5" fill="var(--green-deep)" transform="rotate(135,62,40)"/>
+      <ellipse cx="62" cy="26" rx="2.2" ry="5.5" fill="var(--green-deep)" transform="rotate(180,62,40)"/>
+      <ellipse cx="62" cy="26" rx="2.2" ry="5.5" fill="var(--green-deep)" transform="rotate(225,62,40)"/>
+      <ellipse cx="62" cy="26" rx="2.2" ry="5.5" fill="var(--green-deep)" transform="rotate(270,62,40)"/>
+      <ellipse cx="62" cy="26" rx="2.2" ry="5.5" fill="var(--green-deep)" transform="rotate(315,62,40)"/>
+      <circle cx="62" cy="40" r="9.5" fill="var(--green-deep)"/>
+      <circle cx="62" cy="40" r="6"/>
+      <circle cx="62" cy="40" r="2.8" fill="var(--green-deep)"/>
+      <rect x="34" y="35" width="12" height="9" rx="1.5"/>
+    </svg>
+    </div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow"
+         data-es="Restaurante Vegetariano · San Pedro, Costa Rica"
+         data-en="Vegetarian Restaurant · San Pedro, Costa Rica">
+        Restaurante Vegetariano · San Pedro, Costa Rica
+      </p>
+      <h1 class="hero-title">
+        <span data-es="Cocina" data-en="Conscious">Cocina</span>
+        <em data-es="consciente." data-en="cuisine.">consciente.</em>
+      </h1>
+      <p class="hero-sub"
+         data-es="Ingredientes frescos y orgánicos de productores locales, en un espacio acogedor donde comer bien se siente diferente."
+         data-en="Fresh organic ingredients from local producers, in a welcoming space where eating well truly feels different.">
+        Ingredientes frescos y orgánicos de productores locales, en un espacio acogedor donde comer bien se siente diferente.
+      </p>
+      <div class="hero-ctas">
+        <a href="menu.html" class="btn btn-primary"
+           data-es="Ver el Menú" data-en="Explore the Menu">Ver el Menú</a>
+        <a href="#nosotros" class="btn btn-ghost"
+           data-es="Nuestra historia" data-en="Our story">Nuestra historia</a>
+      </div>
+    </div>
+    <div class="hero-scroll" aria-hidden="true"><span></span></div>
+  </section>
+
+  <!-- ==================== ABOUT ==================== -->
+  <section class="about section" id="nosotros">
+    <div class="container">
+      <div class="about-grid">
+        <!-- Text -->
+        <div class="about-text animate">
+          <span class="about-pill">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><circle cx="6" cy="6" r="5" stroke="currentColor" stroke-width="1.5"/><path d="M6 3v3l2 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            <span data-es="Nuestra filosofía" data-en="Our philosophy">Nuestra filosofía</span>
+          </span>
+          <h2 data-es="Un espacio que cuida lo que comés y de dónde viene." data-en="A space that cares about what you eat and where it comes from.">
+            Un espacio que cuida lo que comés y de dónde viene.
+          </h2>
+          <p data-es="Búho nació con una idea simple: servir comida rica, fresca y consciente. Utilizamos ingredientes orgánicos y apoyamos a productores locales de Costa Rica, porque creemos que lo que ponés en tu plato importa."
+             data-en="Búho was born with a simple idea: serve delicious, fresh, and mindful food. We use organic ingredients and support local Costa Rican producers, because we believe what goes on your plate matters.">
+            Búho nació con una idea simple: servir comida rica, fresca y consciente. Utilizamos ingredientes orgánicos y apoyamos a productores locales de Costa Rica, porque creemos que lo que ponés en tu plato importa.
+          </p>
+          <p data-es="Aquí podés encontrar opciones vegetarianas, veganas y gluten-friendly preparadas con amor. Estamos a pasos de la UCR, en el corazón de Calle la Amargura."
+             data-en="Here you'll find vegetarian, vegan and gluten-friendly options made with care. We're steps from UCR, in the heart of Calle la Amargura.">
+            Aquí podés encontrar opciones vegetarianas, veganas y gluten-friendly preparadas con amor. Estamos a pasos de la UCR, en el corazón de Calle la Amargura.
+          </p>
+          <a href="menu.html" class="btn btn-outline"
+             data-es="Ver el menú completo" data-en="See the full menu">Ver el menú completo</a>
+        </div>
+
+        <!-- Card -->
+        <div class="about-card animate d2">
+          <div class="about-card-accent"></div>
+          <div class="about-values">
+            <div class="about-value">
+              <span class="about-value-icon">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--terracotta)" stroke-width="1.6" stroke-linecap="round">
+                  <path d="M12 22V12"/><path d="M12 12C12 12 5 10 5 4c0 0 7 0 7 8z"/><path d="M12 12c0 0 7-2 7-8 0 0-7 0-7 8z"/>
+                </svg>
+              </span>
+              <h4 data-es="Plant-based" data-en="Plant-based">Plant-based</h4>
+              <p data-es="Cocina vegetariana con muchas opciones 100% veganas." data-en="Vegetarian cuisine with many fully vegan options.">Cocina vegetariana con muchas opciones 100% veganas.</p>
+            </div>
+            <div class="about-value">
+              <span class="about-value-icon">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--sage)" stroke-width="1.6" stroke-linecap="round">
+                  <circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/><path d="M4.93 4.93l2.12 2.12M16.95 16.95l2.12 2.12M16.95 7.05l2.12-2.12M4.93 19.07l2.12-2.12"/>
+                </svg>
+              </span>
+              <h4 data-es="Local & fresco" data-en="Local & fresh">Local & fresco</h4>
+              <p data-es="Apoyamos a productores costarricenses con ingredientes de temporada." data-en="We support Costa Rican farmers with seasonal ingredients.">Apoyamos a productores costarricenses con ingredientes de temporada.</p>
+            </div>
+            <div class="about-value">
+              <span class="about-value-icon">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--dusty-rose)" stroke-width="1.6" stroke-linecap="round">
+                  <path d="M3 12c0-2.8 2.2-5 5-5h8c2.8 0 5 2.2 5 5s-2.2 5-5 5H8c-2.8 0-5-2.2-5-5z"/>
+                  <path d="M8 12h8M12 8v8"/>
+                </svg>
+              </span>
+              <h4 data-es="Gluten-friendly" data-en="Gluten-friendly">Gluten-friendly</h4>
+              <p data-es="Muchos platos adaptables para personas con sensibilidad al gluten." data-en="Many dishes adaptable for gluten-sensitive guests.">Muchos platos adaptables para personas con sensibilidad al gluten.</p>
+            </div>
+            <div class="about-value">
+              <span class="about-value-icon">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.6" stroke-linecap="round">
+                  <path d="M17 8h1a4 4 0 010 8h-1"/><path d="M3 8h14v9a4 4 0 01-4 4H7a4 4 0 01-4-4V8z"/><line x1="6" y1="2" x2="6" y2="4"/><line x1="10" y1="2" x2="10" y2="4"/><line x1="14" y1="2" x2="14" y2="4"/>
+                </svg>
+              </span>
+              <h4 data-es="Café artesanal" data-en="Artisan coffee">Café artesanal</h4>
+              <p data-es="Batidos, infusiones, lattes y repostería hecha en casa." data-en="Smoothies, herbal teas, lattes and house-made pastries.">Batidos, infusiones, lattes y repostería hecha en casa.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== HIGHLIGHTS ==================== -->
+  <section class="highlights">
+    <div class="container">
+      <div class="highlights-header animate">
+        <p class="section-label" data-es="Lo que nos hace especiales" data-en="What makes us special">Lo que nos hace especiales</p>
+        <h2 class="section-title" data-es="Más que solo comida" data-en="More than just food">Más que solo comida</h2>
+      </div>
+      <div class="highlights-grid">
+        <div class="highlight-item animate d1">
+          <div class="highlight-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--sage)" stroke-width="1.4" stroke-linecap="round"><path d="M12 22V12"/><path d="M12 12C12 12 5 10 5 4c0 0 7 0 7 8z"/><path d="M12 12c0 0 7-2 7-8 0 0-7 0-7 8z"/></svg></div>
+          <div class="highlight-title" data-es="Opciones veganas" data-en="Vegan options">Opciones veganas</div>
+          <p class="highlight-desc" data-es="La mayoría de nuestros platos tienen versión vegana disponible." data-en="Most of our dishes have a vegan version available.">La mayoría de nuestros platos tienen versión vegana disponible.</p>
+        </div>
+        <div class="highlight-item animate d1">
+          <div class="highlight-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--gold-light)" stroke-width="1.4" stroke-linecap="round"><path d="M12 22V10"/><path d="M12 10C12 10 7 8 7 4c0 0 5 0 5 6z"/><path d="M12 10c0 0 5-2 5-6 0 0-5 0-5 6z"/><path d="M10 14c-2 1-3 3-3 3s2 0 3-3z"/><path d="M14 14c2 1 3 3 3 3s-2 0-3-3z"/></svg></div>
+          <div class="highlight-title" data-es="Gluten-friendly" data-en="Gluten-friendly">Gluten-friendly</div>
+          <p class="highlight-desc" data-es="Muchas alternativas sin gluten o adaptables." data-en="Many gluten-free or adaptable alternatives.">Muchas alternativas sin gluten o adaptables.</p>
+        </div>
+        <div class="highlight-item animate d2">
+          <div class="highlight-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--dusty-rose)" stroke-width="1.4" stroke-linecap="round"><ellipse cx="12" cy="14" rx="6" ry="5"/><circle cx="9" cy="9" r="1.5" fill="var(--dusty-rose)"/><circle cx="15" cy="9" r="1.5" fill="var(--dusty-rose)"/><circle cx="7" cy="13" r="1.2" fill="var(--dusty-rose)"/><circle cx="17" cy="13" r="1.2" fill="var(--dusty-rose)"/></svg></div>
+          <div class="highlight-title" data-es="Dog friendly" data-en="Dog friendly">Dog friendly</div>
+          <p class="highlight-desc" data-es="Podés venir con tu mejor amigo de cuatro patas." data-en="You're welcome to bring your four-legged best friend.">Podés venir con tu mejor amigo de cuatro patas.</p>
+        </div>
+        <div class="highlight-item animate d2">
+          <div class="highlight-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--sage)" stroke-width="1.4" stroke-linecap="round"><path d="M5 12.55a11 11 0 0114.08 0"/><path d="M1.42 9a16 16 0 0121.16 0"/><path d="M8.53 16.11a6 6 0 016.95 0"/><circle cx="12" cy="20" r="1" fill="var(--sage)"/></svg></div>
+          <div class="highlight-title" data-es="Wi-Fi gratis" data-en="Free Wi-Fi">Wi-Fi gratis</div>
+          <p class="highlight-desc" data-es="Trabaja o estudia mientras disfrutás de tu plato." data-en="Work or study while enjoying your meal.">Trabaja o estudia mientras disfrutás de tu plato.</p>
+        </div>
+        <div class="highlight-item animate d3">
+          <div class="highlight-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--gold-light)" stroke-width="1.4" stroke-linecap="round"><rect x="2" y="7" width="16" height="10" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4L8 7"/><line x1="23" y1="11" x2="23" y2="13"/><path d="M18 11h5"/></svg></div>
+          <div class="highlight-title" data-es="Uber Eats" data-en="Uber Eats">Uber Eats</div>
+          <p class="highlight-desc" data-es="También hacemos entregas a domicilio a través de Uber Eats." data-en="We also deliver through Uber Eats.">También hacemos entregas a domicilio a través de Uber Eats.</p>
+        </div>
+        <div class="highlight-item animate d3">
+          <div class="highlight-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--dusty-rose)" stroke-width="1.4" stroke-linecap="round"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg></div>
+          <div class="highlight-title" data-es="Tarjetas" data-en="Cards accepted">Tarjetas</div>
+          <p class="highlight-desc" data-es="Aceptamos tarjetas de crédito y débito." data-en="We accept credit and debit cards.">Aceptamos tarjetas de crédito y débito.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FEATURED DISHES ==================== -->
+  <section class="featured section">
+    <div class="container">
+      <div class="featured-header">
+        <div class="animate">
+          <p class="section-label" data-es="Lo mejor de la casa" data-en="House favorites">Lo mejor de la casa</p>
+          <h2 class="section-title" data-es="Platos destacados" data-en="Featured dishes">Platos destacados</h2>
+        </div>
+        <a href="menu.html" class="btn btn-outline animate d2"
+           data-es="Menú completo →" data-en="Full menu →">Menú completo →</a>
+      </div>
+
+      <div class="dishes-track">
+        <!-- Bowl Caribeño -->
+        <div class="dish-card animate d1">
+          <div class="dish-img">
+            <img class="dish-img-bg"
+                 src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=600&q=80"
+                 alt="Bowl Caribeño"
+                 onerror="this.style.background='var(--green-soft)'">
+            <span class="dish-badge green" data-es="Vegano" data-en="Vegan">Vegano</span>
+          </div>
+          <div class="dish-info">
+            <h4 data-es="Bowl Caribeño" data-en="Caribbean Bowl">Bowl Caribeño</h4>
+            <p data-es="Arroz integral, garbanzos en leche de coco, plátano maduro y aguacate."
+               data-en="Brown rice, chickpeas in coconut milk, sweet plantain and avocado.">Arroz integral, garbanzos en leche de coco, plátano maduro y aguacate.</p>
+            <div class="dish-footer">
+              <span class="dish-price">₡5.200</span>
+              <div class="dish-tags"><span class="tag tag-vegan" data-es="Vegano" data-en="Vegan">Vegano</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bowl de Falafel -->
+        <div class="dish-card animate d1">
+          <div class="dish-img">
+            <img class="dish-img-bg"
+                 src="https://images.unsplash.com/photo-1478145046317-39f10e56b5e9?auto=format&fit=crop&w=600&q=80"
+                 alt="Bowl de Falafel"
+                 onerror="this.style.background='var(--green-soft)'">
+            <span class="dish-badge green" data-es="Favorito" data-en="Favorite">Favorito</span>
+          </div>
+          <div class="dish-info">
+            <h4 data-es="Bowl de Falafel" data-en="Falafel Bowl">Bowl de Falafel</h4>
+            <p data-es="Falafel, hummus, babaganoush, aceitunas kalamata y tzatziki vegano."
+               data-en="Falafel, hummus, babaganoush, kalamata olives and vegan tzatziki.">Falafel, hummus, babaganoush, aceitunas kalamata y tzatziki vegano.</p>
+            <div class="dish-footer">
+              <span class="dish-price">₡5.200</span>
+              <div class="dish-tags"><span class="tag tag-vegan" data-es="Vegano" data-en="Vegan">Vegano</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Shakshuka -->
+        <div class="dish-card animate d2">
+          <div class="dish-img">
+            <img class="dish-img-bg"
+                 src="https://images.unsplash.com/photo-1599389336752-9ff2fc90e895?auto=format&fit=crop&w=600&q=80"
+                 alt="Huevos Shakshuka"
+                 onerror="this.style.background='var(--terracotta)'">
+            <span class="dish-badge gold" data-es="Brunch" data-en="Brunch">Brunch</span>
+          </div>
+          <div class="dish-info">
+            <h4 data-es="Huevos Shakshuka" data-en="Shakshuka Eggs">Huevos Shakshuka</h4>
+            <p data-es="Dos huevos en salsa de tomate con harissa, queso feta y pan de masa madre."
+               data-en="Two eggs in tomato sauce with harissa, feta cheese and sourdough bread.">Dos huevos en salsa de tomate con harissa, queso feta y pan de masa madre.</p>
+            <div class="dish-footer">
+              <span class="dish-price">₡5.500</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pad Thai -->
+        <div class="dish-card animate d2">
+          <div class="dish-img">
+            <img class="dish-img-bg"
+                 src="https://images.unsplash.com/photo-1562802378-063ec186a863?auto=format&fit=crop&w=600&q=80"
+                 alt="Pad Thai"
+                 onerror="this.style.background='var(--gold)'">
+            <span class="dish-badge green" data-es="Vegano" data-en="Vegan">Vegano</span>
+          </div>
+          <div class="dish-info">
+            <h4>Pad Thai</h4>
+            <p data-es="Fideos de arroz en salsa de tamarindo y mantequilla de maní con vegetales."
+               data-en="Rice noodles in tamarind and peanut butter sauce with fresh vegetables.">Fideos de arroz en salsa de tamarindo y mantequilla de maní con vegetales.</p>
+            <div class="dish-footer">
+              <span class="dish-price">₡6.650</span>
+              <div class="dish-tags"><span class="tag tag-vegan" data-es="Vegano" data-en="Vegan">Vegano</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Brownie -->
+        <div class="dish-card animate d3">
+          <div class="dish-img">
+            <img class="dish-img-bg"
+                 src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=600&q=80"
+                 alt="Brownie"
+                 onerror="this.style.background='#4a2c1a'">
+            <span class="dish-badge green" data-es="Repostería" data-en="Pastry">Repostería</span>
+          </div>
+          <div class="dish-info">
+            <h4 data-es="Brownie de Nueces" data-en="Walnut Brownie">Brownie de Nueces</h4>
+            <p data-es="Con nueces de nogal y caramelo salado vegano. Hecho en casa."
+               data-en="With walnuts and vegan salted caramel. House-made.">Con nueces de nogal y caramelo salado vegano. Hecho en casa.</p>
+            <div class="dish-footer">
+              <span class="dish-price">₡1.950</span>
+              <div class="dish-tags"><span class="tag tag-vegan" data-es="Vegano" data-en="Vegan">Vegano</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT ==================== -->
+  <section class="contact section" id="contacto">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Info -->
+        <div class="contact-info animate">
+          <p class="section-label" data-es="Encuéntranos" data-en="Find us">Encuéntranos</p>
+          <h2 data-es="Vení a visitarnos" data-en="Come visit us">Vení a visitarnos</h2>
+
+          <div class="contact-detail">
+            <div class="contact-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--green-mid)" stroke-width="1.6" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+            <div class="contact-detail-text">
+              <h4 data-es="Dirección" data-en="Address">Dirección</h4>
+              <p data-es="25 metros este de Soda la U, Calle la Amargura, San Pedro de Montes de Oca, San José, Costa Rica. Al lado de Yoga Mandir."
+                 data-en="25 meters east of Soda la U, Calle la Amargura, San Pedro de Montes de Oca, San José, Costa Rica. Next to Yoga Mandir.">25 metros este de Soda la U, Calle la Amargura, San Pedro de Montes de Oca, San José, Costa Rica. Al lado de Yoga Mandir.</p>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--green-mid)" stroke-width="1.6" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.79 10.5a19.79 19.79 0 01-3.07-8.67A2 2 0 012.7 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 7.09a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/></svg></div>
+            <div class="contact-detail-text">
+              <h4 data-es="Teléfono" data-en="Phone">Teléfono</h4>
+              <a href="tel:+50622246293">+506 2224-6293</a>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--green-mid)" stroke-width="1.6" stroke-linecap="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+            <div class="contact-detail-text">
+              <h4 data-es="Correo" data-en="Email">Correo</h4>
+              <a href="mailto:elbuhovegetariano@gmail.com">elbuhovegetariano@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--green-mid)" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg></div>
+            <div class="contact-detail-text">
+              <h4 data-es="Horario" data-en="Hours">Horario</h4>
+              <div class="hours-table">
+                <span class="day" data-es="Lun – Vie" data-en="Mon – Fri">Lun – Vie</span>
+                <span class="time">11:30 – 18:00</span>
+                <span class="day" data-es="Sábado" data-en="Saturday">Sábado</span>
+                <span class="time">10:00 – 16:00</span>
+                <span class="day" data-es="Domingo" data-en="Sunday">Domingo</span>
+                <span class="time" data-es="Cerrado" data-en="Closed">Cerrado</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="social-links">
+            <a href="https://www.instagram.com/buho.rest/" target="_blank" rel="noopener" class="social-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+              @buho.rest
+            </a>
+            <a href="https://www.facebook.com/buho.rest" target="_blank" rel="noopener" class="social-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+              Facebook
+            </a>
+            <a href="https://www.google.com/maps/place/El+B%C3%BAho/@9.9344106,-84.0504875,17z" target="_blank" rel="noopener" class="social-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C7.802 0 4 3.403 4 7.602 4 11.8 12 24 12 24s8-12.2 8-16.398C20 3.403 16.199 0 12 0zm0 11a3 3 0 110-6 3 3 0 010 6z"/></svg>
+              <span data-es="Ver en Maps" data-en="View on Maps">Ver en Maps</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Map -->
+        <div class="map-wrap animate d2">
+          <iframe
+            src="https://maps.google.com/maps?q=9.9344106,-84.0504875&z=17&output=embed"
+            title="El Búho — Ubicación en Google Maps"
+            loading="lazy"
+            allowfullscreen
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div>
+          <div class="footer-brand">
+            <svg class="owl-icon" viewBox="0 0 80 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 24 L1 4 Q1 1 4 1 L34 1 L34 24Z" fill="currentColor"/>
+            <path d="M79 24 L79 4 Q79 1 76 1 L46 1 L46 24Z" fill="currentColor"/>
+            <circle cx="18" cy="40" r="16" fill="currentColor"/>
+            <ellipse cx="18" cy="26" rx="2.2" ry="5.5" fill="var(--green-deep)" transform="rotate(0,18,40)"/>
+            <ellipse cx="18" cy="26" rx="2.2" ry="5.5" fill="var(--green-deep)" transform="rotate(45,18,40)"/>
+            <ellipse cx="18" cy="26" rx="2.2" ry="5.5" fill="var(--green-deep)" transform="rotate(90,18,40)"/>
+            <ellipse cx="18" cy="26" rx="2.2" ry="5.5" fill="var(--green-deep)" transform="rotate(135,18,40)"/>
+            <ellipse cx="18" cy="26" rx="2.2" ry="5.5" fill="var(--green-deep)" transform="rotate(180,18,40)"/>
+            <ellipse cx="18" cy="26" rx="2.2" ry="5.5" fill="var(--green-deep)" transform="rotate(225,18,40)"/>
+            <ellipse cx="18" cy="26" rx="2.2" ry="5.5" fill="var(--green-deep)" transform="rotate(270,18,40)"/>
+            <ellipse cx="18" cy="26" rx="2.2" ry="5.5" fill="var(--green-deep)" transform="rotate(315,18,40)"/>
+            <circle cx="18" cy="40" r="9.5" fill="var(--green-deep)"/>
+            <circle cx="18" cy="40" r="6" fill="currentColor"/>
+            <circle cx="18" cy="40" r="2.8" fill="var(--green-deep)"/>
+            <circle cx="62" cy="40" r="16" fill="currentColor"/>
+            <ellipse cx="62" cy="26" rx="2.2" ry="5.5" fill="var(--green-deep)" transform="rotate(0,62,40)"/>
+            <ellipse cx="62" cy="26" rx="2.2" ry="5.5" fill="var(--green-deep)" transform="rotate(45,62,40)"/>
+            <ellipse cx="62" cy="26" rx="2.2" ry="5.5" fill="var(--green-deep)" transform="rotate(90,62,40)"/>
+            <ellipse cx="62" cy="26" rx="2.2" ry="5.5" fill="var(--green-deep)" transform="rotate(135,62,40)"/>
+            <ellipse cx="62" cy="26" rx="2.2" ry="5.5" fill="var(--green-deep)" transform="rotate(180,62,40)"/>
+            <ellipse cx="62" cy="26" rx="2.2" ry="5.5" fill="var(--green-deep)" transform="rotate(225,62,40)"/>
+            <ellipse cx="62" cy="26" rx="2.2" ry="5.5" fill="var(--green-deep)" transform="rotate(270,62,40)"/>
+            <ellipse cx="62" cy="26" rx="2.2" ry="5.5" fill="var(--green-deep)" transform="rotate(315,62,40)"/>
+            <circle cx="62" cy="40" r="9.5" fill="var(--green-deep)"/>
+            <circle cx="62" cy="40" r="6" fill="currentColor"/>
+            <circle cx="62" cy="40" r="2.8" fill="var(--green-deep)"/>
+            <rect x="34" y="35" width="12" height="9" rx="1.5" fill="currentColor"/>
+          </svg>
+            <span class="logo-text">el búho</span>
+          </div>
+          <p class="footer-tagline" data-es="Cocina consciente · San Pedro, Costa Rica" data-en="Conscious cuisine · San Pedro, Costa Rica">Cocina consciente · San Pedro, Costa Rica</p>
+        </div>
+        <nav class="footer-links">
+          <a href="#nosotros" data-es="Nosotros" data-en="About">Nosotros</a>
+          <a href="menu.html" data-es="Menú" data-en="Menu">Menú</a>
+          <a href="#contacto" data-es="Contacto" data-en="Contact">Contacto</a>
+          <a href="https://www.instagram.com/buho.rest/" target="_blank">Instagram</a>
+        </nav>
+        <p class="footer-copy" data-es="© 2025 El Búho Vegetariano. Todos los derechos reservados." data-en="© 2025 El Búho Vegetariano. All rights reserved.">© 2025 El Búho Vegetariano. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

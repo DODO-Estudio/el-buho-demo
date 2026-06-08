@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menú — El Búho Vegetariano · San Pedro, Costa Rica</title>
+  <meta name="description" content="Menú completo de El Búho: bowls, ensaladas, hamburguesas, pastas, sandwiches, wraps, batidos, café, repostería y brunch. Opciones veganas y gluten-friendly.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* Legend bar */
+    .menu-legend {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 1.1rem 2rem;
+      background: var(--cream);
+      border-bottom: 1px solid var(--cream-dark);
+      font-size: 0.8rem;
+      color: var(--text-soft);
+    }
+    .legend-item { display: flex; align-items: center; gap: 0.4rem; }
+
+    /* Back link */
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: rgba(247,241,227,0.7);
+      font-size: 0.82rem;
+      font-weight: 500;
+      margin-bottom: 1.5rem;
+      transition: color 0.25s ease;
+    }
+    .back-link:hover { color: var(--cream); }
+    .back-link svg { transition: transform 0.25s ease; }
+    .back-link:hover svg { transform: translateX(-3px); }
+
+    /* Menu hero decorative owl (smaller than index) */
+    .menu-hero-owl {
+      position: absolute;
+      right: 8%;
+      top: 50%;
+      transform: translateY(-50%);
+      width: min(30vh, 240px);
+      opacity: 0.07;
+      pointer-events: none;
+    }
+
+    /* Dietary note pill in hero */
+    .diet-pills {
+      display: flex;
+      gap: 0.6rem;
+      justify-content: center;
+      margin-top: 1.5rem;
+      flex-wrap: wrap;
+    }
+    .diet-pill {
+      padding: 0.3rem 0.85rem;
+      border-radius: 100px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      border: 1px solid rgba(247,241,227,0.25);
+      color: rgba(247,241,227,0.75);
+    }
+
+    /* Section scroll offset for sticky navs */
+    .menu-section { scroll-margin-top: 145px; }
+
+    /* Responsive cat-nav adjustments */
+    @media (max-width: 600px) {
+      .cat-nav-btn { padding: 0.9rem 1rem; font-size: 0.68rem; }
+      .menu-tab    { padding: 0.55rem 1.2rem; font-size: 0.72rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <svg class="owl-icon" viewBox="0 0 80 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 24 L1 4 Q1 1 4 1 L34 1 L34 24Z" fill="currentColor"/>
+          <path d="M79 24 L79 4 Q79 1 76 1 L46 1 L46 24Z" fill="currentColor"/>
+          <circle cx="18" cy="40" r="16" fill="currentColor"/>
+          <ellipse cx="18" cy="26" rx="2.2" ry="5.5" fill="white" transform="rotate(0,18,40)"/>
+          <ellipse cx="18" cy="26" rx="2.2" ry="5.5" fill="white" transform="rotate(45,18,40)"/>
+          <ellipse cx="18" cy="26" rx="2.2" ry="5.5" fill="white" transform="rotate(90,18,40)"/>
+          <ellipse cx="18" cy="26" rx="2.2" ry="5.5" fill="white" transform="rotate(135,18,40)"/>
+          <ellipse cx="18" cy="26" rx="2.2" ry="5.5" fill="white" transform="rotate(180,18,40)"/>
+          <ellipse cx="18" cy="26" rx="2.2" ry="5.5" fill="white" transform="rotate(225,18,40)"/>
+          <ellipse cx="18" cy="26" rx="2.2" ry="5.5" fill="white" transform="rotate(270,18,40)"/>
+          <ellipse cx="18" cy="26" rx="2.2" ry="5.5" fill="white" transform="rotate(315,18,40)"/>
+          <circle cx="18" cy="40" r="9.5" fill="white"/>
+          <circle cx="18" cy="40" r="6" fill="currentColor"/>
+          <circle cx="18" cy="40" r="2.8" fill="white"/>
+          <circle cx="62" cy="40" r="16" fill="currentColor"/>
+          <ellipse cx="62" cy="26" rx="2.2" ry="5.5" fill="white" transform="rotate(0,62,40)"/>
+          <ellipse cx="62" cy="26" rx="2.2" ry="5.5" fill="white" transform="rotate(45,62,40)"/>
+          <ellipse cx="62" cy="26" rx="2.2" ry="5.5" fill="white" transform="rotate(90,62,40)"/>
+          <ellipse cx="62" cy="26" rx="2.2" ry="5.5" fill="white" transform="rotate(135,62,40)"/>
+          <ellipse cx="62" cy="26" rx="2.2" ry="5.5" fill="white" transform="rotate(180,62,40)"/>
+          <ellipse cx="62" cy="26" rx="2.2" ry="5.5" fill="white" transform="rotate(225,62,40)"/>
+          <ellipse cx="62" cy="26" rx="2.2" ry="5.5" fill="white" transform="rotate(270,62,40)"/>
+          <ellipse cx="62" cy="26" rx="2.2" ry="5.5" fill="white" transform="rotate(315,62,40)"/>
+          <circle cx="62" cy="40" r="9.5" fill="white"/>
+          <circle cx="62" cy="40" r="6" fill="currentColor"/>
+          <circle cx="62" cy="40" r="2.8" fill="white"/>
+          <rect x="34" y="35" width="12" height="9" rx="1.5" fill="currentColor"/>
+        </svg>
+        <span class="logo-text">el búho</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="index.html#nosotros" data-es="Nosotros"  data-en="About">Nosotros</a>
+        <a href="menu.html"            data-es="Menú"      data-en="Menu" style="color:var(--gold-light)">Menú</a>
+        <a href="index.html#contacto"  data-es="Contacto"  data-en="Contact">Contacto</a>
+      </div>
+
+      <div class="nav-right">
+        <button class="lang-toggle" id="langToggle" aria-label="Cambiar idioma / Switch language">
+          <span class="lang-opt" data-lang="es">ES</span>
+          <span class="lang-divider">/</span>
+          <span class="lang-opt" data-lang="en">EN</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html#nosotros" data-es="Nosotros"  data-en="About">Nosotros</a>
+      <a href="menu.html"            data-es="Menú"      data-en="Menu">Menú</a>
+      <a href="index.html#contacto"  data-es="Contacto"  data-en="Contact">Contacto</a>
+    </div>
+  </nav>
+
+  <!-- ==================== MENU HERO ==================== -->
+  <header class="menu-hero">
+    <!-- Decorative background owl -->
+    <div class="menu-hero-owl" aria-hidden="true">
+      <svg viewBox="0 0 80 58" fill="var(--cream)" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1 24 L1 4 Q1 1 4 1 L34 1 L34 24Z"/>
+        <path d="M79 24 L79 4 Q79 1 76 1 L46 1 L46 24Z"/>
+        <circle cx="18" cy="40" r="16"/>
+        <ellipse cx="18" cy="26" rx="2.2" ry="5.5" fill="var(--green-deep)" transform="rotate(0,18,40)"/>
+        <ellipse cx="18" cy="26" rx="2.2" ry="5.5" fill="var(--green-deep)" transform="rotate(45,18,40)"/>
+        <ellipse cx="18" cy="26" rx="2.2" ry="5.5" fill="var(--green-deep)" transform="rotate(90,18,40)"/>
+        <ellipse cx="18" cy="26" rx="2.2" ry="5.5" fill="var(--green-deep)" transform="rotate(135,18,40)"/>
+        <ellipse cx="18" cy="26" rx="2.2" ry="5.5" fill="var(--green-deep)" transform="rotate(180,18,40)"/>
+        <ellipse cx="18" cy="26" rx="2.2" ry="5.5" fill="var(--green-deep)" transform="rotate(225,18,40)"/>
+        <ellipse cx="18" cy="26" rx="2.2" ry="5.5" fill="var(--green-deep)" transform="rotate(270,18,40)"/>
+        <ellipse cx="18" cy="26" rx="2.2" ry="5.5" fill="var(--green-deep)" transform="rotate(315,18,40)"/>
+        <circle cx="18" cy="40" r="9.5" fill="var(--green-deep)"/>
+        <circle cx="18" cy="40" r="6"/>
+        <circle cx="18" cy="40" r="2.8" fill="var(--green-deep)"/>
+        <circle cx="62" cy="40" r="16"/>
+        <ellipse cx="62" cy="26" rx="2.2" ry="5.5" fill="var(--green-deep)" transform="rotate(0,62,40)"/>
+        <ellipse cx="62" cy="26" rx="2.2" ry="5.5" fill="var(--green-deep)" transform="rotate(45,62,40)"/>
+        <ellipse cx="62" cy="26" rx="2.2" ry="5.5" fill="var(--green-deep)" transform="rotate(90,62,40)"/>
+        <ellipse cx="62" cy="26" rx="2.2" ry="5.5" fill="var(--green-deep)" transform="rotate(135,62,40)"/>
+        <ellipse cx="62" cy="26" rx="2.2" ry="5.5" fill="var(--green-deep)" transform="rotate(180,62,40)"/>
+        <ellipse cx="62" cy="26" rx="2.2" ry="5.5" fill="var(--green-deep)" transform="rotate(225,62,40)"/>
+        <ellipse cx="62" cy="26" rx="2.2" ry="5.5" fill="var(--green-deep)" transform="rotate(270,62,40)"/>
+        <ellipse cx="62" cy="26" rx="2.2" ry="5.5" fill="var(--green-deep)" transform="rotate(315,62,40)"/>
+        <circle cx="62" cy="40" r="9.5" fill="var(--green-deep)"/>
+        <circle cx="62" cy="40" r="6"/>
+        <circle cx="62" cy="40" r="2.8" fill="var(--green-deep)"/>
+        <rect x="34" y="35" width="12" height="9" rx="1.5"/>
+      </svg>
+    </div>
+
+    <div class="menu-hero-inner container">
+      <a href="index.html" class="back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+        <span data-es="Volver al inicio" data-en="Back to home">Volver al inicio</span>
+      </a>
+
+      <h1 data-es="Nuestro Menú" data-en="Our Menu">Nuestro Menú</h1>
+      <p data-es="Cocina vegetariana con ingredientes frescos, locales y con amor. Opciones veganas y gluten-friendly disponibles."
+         data-en="Vegetarian cuisine with fresh, local ingredients and love. Vegan and gluten-friendly options available.">
+        Cocina vegetariana con ingredientes frescos, locales y con amor. Opciones veganas y gluten-friendly disponibles.
+      </p>
+
+      <!-- Diet legend pills -->
+      <div class="diet-pills">
+        <span class="diet-pill"><span style="display:inline-block;width:10px;height:10px;background:var(--sage);border-radius:50%;margin-right:3px"></span><span data-es="Vegano" data-en="Vegan">Vegano</span></span>
+        <span class="diet-pill"><span style="display:inline-block;width:10px;height:10px;background:var(--gold);border-radius:50%;margin-right:3px"></span><span data-es="Gluten-friendly" data-en="Gluten-friendly">Gluten-friendly</span></span>
+        <span class="diet-pill"><span style="display:inline-block;width:10px;height:10px;background:var(--dusty-rose);border-radius:50%;margin-right:3px"></span><span data-es="Vegetariano" data-en="Vegetarian">Vegetariano</span></span>
+      </div>
+
+      <!-- Main / Brunch tabs -->
+      <div class="menu-hero-tabs">
+        <button class="menu-tab active" data-tab="principal"
+                data-es="Menú Principal" data-en="Main Menu">Menú Principal</button>
+        <button class="menu-tab" data-tab="brunch"
+                data-es="Brunch" data-en="Brunch">Brunch</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== DIET LEGEND ==================== -->
+  <div class="menu-legend">
+    <span data-es="Leyenda:" data-en="Legend:">Leyenda:</span>
+    <span class="legend-item"><span class="tag tag-vegan" data-es="Vegano" data-en="Vegan">Vegano</span></span>
+    <span class="legend-item"><span class="tag tag-gf"    data-es="GF · Gluten-friendly" data-en="GF · Gluten-friendly">GF · Gluten-friendly</span></span>
+    <span class="legend-item" style="color:var(--text-soft); font-style:italic;"
+          data-es="Moneda: Colones costarricenses (₡)"
+          data-en="Currency: Costa Rican Colones (₡)">Moneda: Colones costarricenses (₡)</span>
+  </div>
+
+  <!-- ==================== STICKY CATEGORY NAV ==================== -->
+  <div class="cat-nav" id="catNavWrap">
+    <div class="cat-nav-inner" id="catNav">
+      <!-- Populated by script.js -->
+    </div>
+  </div>
+
+  <!-- ==================== MENU BODY ==================== -->
+  <main class="menu-body">
+    <div class="container">
+      <div id="menuBody">
+        <!-- Populated by script.js renderMenu() -->
+        <p style="text-align:center;padding:4rem 0;color:var(--text-soft);"
+           data-es="Cargando menú…" data-en="Loading menu…">Cargando menú…</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div>
+          <div class="footer-brand">
+            <svg class="owl-icon" viewBox="0 0 80 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 24 L1 4 Q1 1 4 1 L34 1 L34 24Z" fill="currentColor"/>
+          <path d="M79 24 L79 4 Q79 1 76 1 L46 1 L46 24Z" fill="currentColor"/>
+          <circle cx="18" cy="40" r="16" fill="currentColor"/>
+          <ellipse cx="18" cy="26" rx="2.2" ry="5.5" fill="white" transform="rotate(0,18,40)"/>
+          <ellipse cx="18" cy="26" rx="2.2" ry="5.5" fill="white" transform="rotate(45,18,40)"/>
+          <ellipse cx="18" cy="26" rx="2.2" ry="5.5" fill="white" transform="rotate(90,18,40)"/>
+          <ellipse cx="18" cy="26" rx="2.2" ry="5.5" fill="white" transform="rotate(135,18,40)"/>
+          <ellipse cx="18" cy="26" rx="2.2" ry="5.5" fill="white" transform="rotate(180,18,40)"/>
+          <ellipse cx="18" cy="26" rx="2.2" ry="5.5" fill="white" transform="rotate(225,18,40)"/>
+          <ellipse cx="18" cy="26" rx="2.2" ry="5.5" fill="white" transform="rotate(270,18,40)"/>
+          <ellipse cx="18" cy="26" rx="2.2" ry="5.5" fill="white" transform="rotate(315,18,40)"/>
+          <circle cx="18" cy="40" r="9.5" fill="white"/>
+          <circle cx="18" cy="40" r="6" fill="currentColor"/>
+          <circle cx="18" cy="40" r="2.8" fill="white"/>
+          <circle cx="62" cy="40" r="16" fill="currentColor"/>
+          <ellipse cx="62" cy="26" rx="2.2" ry="5.5" fill="white" transform="rotate(0,62,40)"/>
+          <ellipse cx="62" cy="26" rx="2.2" ry="5.5" fill="white" transform="rotate(45,62,40)"/>
+          <ellipse cx="62" cy="26" rx="2.2" ry="5.5" fill="white" transform="rotate(90,62,40)"/>
+          <ellipse cx="62" cy="26" rx="2.2" ry="5.5" fill="white" transform="rotate(135,62,40)"/>
+          <ellipse cx="62" cy="26" rx="2.2" ry="5.5" fill="white" transform="rotate(180,62,40)"/>
+          <ellipse cx="62" cy="26" rx="2.2" ry="5.5" fill="white" transform="rotate(225,62,40)"/>
+          <ellipse cx="62" cy="26" rx="2.2" ry="5.5" fill="white" transform="rotate(270,62,40)"/>
+          <ellipse cx="62" cy="26" rx="2.2" ry="5.5" fill="white" transform="rotate(315,62,40)"/>
+          <circle cx="62" cy="40" r="9.5" fill="white"/>
+          <circle cx="62" cy="40" r="6" fill="currentColor"/>
+          <circle cx="62" cy="40" r="2.8" fill="white"/>
+          <rect x="34" y="35" width="12" height="9" rx="1.5" fill="currentColor"/>
+        </svg>
+            <span class="logo-text">el búho</span>
+          </div>
+          <p class="footer-tagline"
+             data-es="Cocina consciente · San Pedro, Costa Rica"
+             data-en="Conscious cuisine · San Pedro, Costa Rica">
+            Cocina consciente · San Pedro, Costa Rica
+          </p>
+        </div>
+
+        <nav class="footer-links">
+          <a href="index.html"           data-es="Inicio"   data-en="Home">Inicio</a>
+          <a href="menu.html"            data-es="Menú"     data-en="Menu">Menú</a>
+          <a href="index.html#contacto"  data-es="Contacto" data-en="Contact">Contacto</a>
+          <a href="https://www.instagram.com/buho.rest/" target="_blank">Instagram</a>
+        </nav>
+
+        <p class="footer-copy"
+           data-es="© 2025 El Búho Vegetariano. Todos los derechos reservados."
+           data-en="© 2025 El Búho Vegetariano. All rights reserved.">
+          © 2025 El Búho Vegetariano. Todos los derechos reservados.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
